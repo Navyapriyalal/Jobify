@@ -7,6 +7,7 @@ import {
   Landing,
   Login,
   Register,
+  AddJob,
 } from "./pages";
 
 import { action as registerAction } from "./pages/Register";
@@ -40,6 +41,12 @@ const router = createBrowserRouter([
         path: "dashboard",
         element: <DashboardLayout isDarkThemeEnabled={isDarkThemeEnabled} />,
         loader: dashboardLoader,
+        children: [
+          {
+            index: true,
+            element: <AddJob />,
+          },
+        ],
       },
       {
         path: "login",
