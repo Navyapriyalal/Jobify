@@ -6,9 +6,8 @@ import {
   useOutletContext,
 } from "react-router-dom";
 import Wrapper from "../assets/wrappers/DashboardFormPage";
-import { FormRow } from "../components";
+import { FormRow, FormRowSelect } from "../components";
 import { JOB_STATUS, JOB_TYPE } from "../../../utils/constants";
-import FormRowSelect from "../components/FormRowSelect";
 import customFetch from "../utils/customFetch";
 import { toast } from "react-toastify";
 
