@@ -8,7 +8,6 @@ import links from "../utils/Links";
 
 const SmallSidebar = () => {
   const { showSidebar, toggleSidebar } = useDashboardContext();
-  console.log(showSidebar);
   return (
     <Wrapper>
       <div
