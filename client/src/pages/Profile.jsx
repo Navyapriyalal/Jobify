@@ -29,7 +29,7 @@ const Profile = () => {
       <Form method="post" className="form" encType="multipart/form-data">
         <h4 className="form-title">profile</h4>
         <div className="form-center">
-          <div className="form-row">
+          {/* <div className="form-row">
             <label htmlFor="image" className="form-label">
               Select an image file (max 0.5 MB):
             </label>
@@ -40,7 +40,7 @@ const Profile = () => {
               className="form-input"
               accept="image/*"
             />
-          </div>
+          </div> */}
           <FormRow type="text" name="name" defaultValue={name} />
           <FormRow
             type="text"
