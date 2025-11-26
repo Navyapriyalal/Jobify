@@ -1,5 +1,6 @@
 import { StatusCodes } from "http-status-codes";
 
+// Error for when a requested resource doesn't exist
 export class NotFoundError extends Error {
   constructor(message) {
     super(message);
@@ -8,6 +9,7 @@ export class NotFoundError extends Error {
   }
 }
 
+// Error for invalid or missing input from the client
 export class BadRequestError extends Error {
   constructor(message) {
     super(message);
@@ -16,6 +18,7 @@ export class BadRequestError extends Error {
   }
 }
 
+// Error for failed authentication (no/invalid token)
 export class UnauthenticatedError extends Error {
   constructor(message) {
     super(message);
@@ -24,6 +27,7 @@ export class UnauthenticatedError extends Error {
   }
 }
 
+// Error for insufficient permissions to access a resource
 export class UnauthorizedError extends Error {
   constructor(message) {
     super(message);
